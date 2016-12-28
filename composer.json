@@ -1,5 +1,5 @@
 {
-    "name": "session-interop/utils.savablesession",
+    "name": "session-interop/utils.arraysession.savable",
     "description": "This package contains the session implementation to be able to iterate over it. ",
     "keywords": ["session", "sessioninterface", "php", "php session", "interop", "session-interop", "session-interface", "interoperability", "savable-session", "array-session", "immutable-session"],
     "homepage": "https://github.com/Ngob/session-interop",
