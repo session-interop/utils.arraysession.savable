@@ -2,20 +2,12 @@
 
 namespace Interop\Session\Utils\ArraySession;
 
-use Interop\Session\Utils\ArraySession\ImmutableArraySession as Session;
+use Interop\Session\Utils\ArraySession\ArraySession as Session;
 
 
 class SavableSession  extends Session implements \Iterator {
 
     protected $position = 0;
-
-    public static function createFromSessionImmutable(Session $session) {
-      return new self($session->storage, $session->prefix);
-    }
-
-    function __construct(iterable $storage) {
-        $this->storage = $storage;
-    }
 
     function rewind() {
        reset($this->storage);
